@@ -1,14 +1,14 @@
 <?php
 
 /* Replace with your email address here */
-$mailto  = 'nafis_abrar@ymail.com';
+$mailto  = 'nabrar@bccrc.ca';
 
 $name     	= strip_tags($_POST['name']);
 $sub     	= strip_tags($_POST['subject']);
 $email      = strip_tags($_POST['email']);
 $message    = strip_tags($_POST['message']);
 
-$subject = "From Decent Material CV | Resume";
+$subject = "website";
 
 // HTML for email to send submission details
 $body = "
