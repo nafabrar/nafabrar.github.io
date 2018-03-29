@@ -666,7 +666,7 @@ a {
 /*---------------PORTFOLIO-------------------*/
 #portfolios {
   width: 100%;
-  height: auto; }
+  height: 250px; }
   #portfolios ul li {
     color: #2196F3;
     cursor: pointer;
