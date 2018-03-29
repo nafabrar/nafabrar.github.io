@@ -1,7 +1,7 @@
 <?php
 
 /* Replace with your email address here */
-$mailto  = 'nabrar@bccrc.ca';
+$mailto  = 'nafis_abrar@ymail.com';
 
 $name     	= strip_tags($_POST['name']);
 $sub     	= strip_tags($_POST['subject']);
