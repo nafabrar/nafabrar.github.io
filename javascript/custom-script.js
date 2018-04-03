@@ -255,3 +255,10 @@
 
 
 })(jQuery);
+$(function() {
+  $("body").prognroll({
+    height: 5, //Progress bar height
+    color: "#8bc34a", //Progress bar background color
+    custom: false //If you make it true, you can add your custom div and see it's scroll progress on the page
+  });
+});
