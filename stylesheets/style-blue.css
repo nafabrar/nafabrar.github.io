@@ -522,7 +522,7 @@ a {
     left: 50%; }
 
   .timeline ul {
-    padding-left: 0;
+    padding-left: 10px;
     width: 100%;
     margin: 0 auto; }
 
@@ -586,7 +586,7 @@ a {
 .timeline-content .sub-heading {
   text-decoration: none;
   color: #2196F3;
-  padding: 0 2px;
+  padding: 2px 3px 1px 10px;
   line-height: 0.5;
   font-weight: 400; }
 .timeline-content .content-p {
