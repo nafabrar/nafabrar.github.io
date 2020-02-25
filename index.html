@@ -2,6 +2,14 @@
 <html lang="en">
 
 <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159092535-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-159092535-1');
+    </script>    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -15,11 +23,8 @@
     <link rel="icon" href="images/thumbnail.png">
     <!-- Apple Touch Icon -->
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-
-
     <!-- Google Font -->
     <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
-
 
     <!-- Google Material Icon -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -85,11 +90,11 @@
                 <ul class="nav-justified hide-on-med-and-down">
                     <li><a href="#header">About</a></li>
                     <li><a href="#experience">Experience</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#education">Education</a></li>
+<!--                     <li><a href="#skills">Skills</a></li>
+ -->                    <li><a href="#education">Education</a></li>
                     <li><a href="#portfolios">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+<!--                     <li><a href="#contact">Contact</a></li>
+ -->                </ul>
 
                 <a href="#0" data-activates="nav-mobile" id="nav-btn" class="button-collapse nav-icon">
                     <i class="ion-navicon"></i></a>
@@ -111,10 +116,10 @@
                         <ul>
                             <li><a class="nav-link" href="#header">About</a></li>
                             <li><a class="nav-link" href="#experience">Experience</a></li>
-                            <li><a class="nav-link" href="#skills">Skills</a></li>
-                            <li><a class="nav-link" href="#education">Education</a></li>
+<!--                             <li><a class="nav-link" href="#skills">Skills</a></li>
+ -->                            <li><a class="nav-link" href="#education">Education</a></li>
                             <li><a class="nav-link" href="#portfolios">Project</a></li>
-                            <li><a class="nav-link" href="#contact">Contact</a></li>
+                            <!-- <li><a class="nav-link" href="#contact">Contact</a></li> -->
                         </ul>
                     </div>
 
@@ -152,23 +157,24 @@
                 <div id="intro-div" class="card content-wrapper">
                     <ul class="text-center list-inline">
                         <li><a href="https://github.com/nafabrar" target="_blank"><i class="ion-social-github"></i></a></li>
-                        <li><!-- <a href="#0" target="_blank"><i class="ion-social-instagram"></i></a> --></li>
+                        <li><a href="https://www.linkedin.com/in/nafis-abrar/" target="_blank"><i class="ion-social-linkedin"></i></a></li>
                     </ul>
 
                     <!-- Some Intro About You -->
                     <p class="text-center">
-                        Currently working on the second version of <a href="https://www.cs.ubc.ca/~jrwright/wright2015mechanical.pdf">MTA</a>. 
+                        Currently working on the second version of <a href="https://www.cs.ubc.ca/~jrwright/wright2015mechanical.pdf">MTA</a>
+                        and <a href="http://edutechs.org/">Edutech</a>.
+                        <br>
                         Open for full time Data science/Machine Learning roles starting May 2020.
-                        What am I most passionate about? Machine Learning!
+                        What am I most passionate about?! Making a positive social impact using AI!
                     </p>
-
                     <div class="row">
                         <!-- Download & Contact Button -->
-                        <div class="col col-xs-12 col-sm-12 col-md-12 text-center">
+                        <!-- <div class="col col-xs-12 col-sm-12 col-md-12 text-center"> -->
                             <!-- Your CV File -->
                             <!-- <a href="cv/cv-file.pdf" download="cv-file.pdf" class="btn waves-effect waves-light btn-primary custom-btn">Download CV</a> -->
-                            <a href="#contact" class="btn waves-effect waves-light btn-primary custom-btn">Contact Me</a>
-                        </div>
+                        <!--     <a href="#contact" class="btn waves-effect waves-light btn-primary custom-btn">Contact Me</a> -->
+                        <!-- </div> -->
                     </div>
 
                 </div>
@@ -195,11 +201,43 @@
 
                                 <!-- Heading -->
                                 <div class="timeline-header">
+                                    <h3 class="text-capitalize">Research Assistant</h3>
+                                </div>
+                                <!-- Organization and Period -->
+                                <p class="sub-heading"><a href="https://www.cs.ubc.ca/cs-research/lci">Laboratory for Computational Intelligence(UBC)</a> </p>
+                                <p class="sub-heading">February 2020 - Present</p>
+                                <ul padding="10px">• Currently working with Ph.D student <a href="https://www.cs.ubc.ca/~hzarkoob/"> Hedayat Zarkoob</a> and  <a href="https://en.wikipedia.org/wiki/Kevin_Leyton-Brown"> Prof. Kevin Leyton Brown</a>  on the second version of MTA - a software system for partially automated peer grading. MTA is currently being used to teach courses in UBC and Princeton University.ul </ul>
+                                <ul>• Link to the previous MTA paper: <a href="https://www.cs.ubc.ca/~jrwright/wright2015mechanical.pdf"> Paper</a> </u>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="card" data-aos="fade-up">
+                            <i class="title-icon fa fa-circle"></i>
+                            <div class="timeline-content">
+                                <!-- Heading -->
+                                <div class="timeline-header">
+                                    <h3 class="text-capitalize">Co-founder</h3>
+                                </div>
+                                <!-- Organization and Period -->
+                                <p class="sub-heading"><a href="https://edutechs.org">EduTech</a> </p>
+                                <p class="sub-heading">February 2020 - Present</p>
+                                <ul padding="10px">• Edutech is a free online educational platform which allows teachers and students to reach out to each other and make constraints such as location and space a thing of the past.</ul>
+                                <ul>• Our goal is to transform the entire education industry in Bangladesh.</ul>
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="card" data-aos="fade-up">
+                            <i class="title-icon fa fa-circle"></i>
+                            <div class="timeline-content">
+
+                                <!-- Heading -->
+                                <div class="timeline-header">
                                     <h3 class="text-capitalize">Data Scientist</h3>
                                 </div>
 
                                 <!-- Organization and Period -->
-                                <p class="sub-heading"><a href="https://www.scotiabank.com/ca/en/0,,2,00.html">Scotiabank</a> - Artifical Intelligence and Machine learning Team</p>
+                                <p class="sub-heading"><a href="https://www.scotiabank.com/ca/en/0,,2,00.html">Scotiabank</a> - Artifical Intelligence and Machine learning</p>
                                 <p class="sub-heading">January 2019 - August 2019</p>
                                 <ul padding="10px">• Worked in an Agile team for Scotiabank’s global fraud detection AI software.Applying ensemble methods for prediction and inference.</ul>
                                 <ul>• Performed sensitivity analysis and hyperparameter tuning to improve model performance.</ul>
@@ -261,204 +299,6 @@
 <!--==========================================
                    SKILLS
 ===========================================-->
-<section id="skills" class="section">
-    <h4 class="text-uppercase text-center">Skills</h4>
-    <div class="container">
-         <div class="row">
-
-            <div class="col col-md-4 col-sm-4 col-xs-12">
-                <div class="card content-wrapper skill-wrapper">
-                    <h5 class="text-center skill-title">Programming Language</h5>
-                    <div class="skill-progress-div">
-                        <!-- Add Skill -->
-                        <p>Python<span>80%</span></p>
-                        <!-- Edit Value Here -->
-                        <div class="progress skill-progress" data-percent="80%">
-                            <div class="determinate skill-determinate">
-                                <i class="skill-determinate-circle fa fa-circle"
-                                   data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill-progress-div">
-                        <!-- Add Skill -->
-                        <p>Java<span>80%</span></p>
-                        <!-- Edit Value Here -->
-                        <div class="progress skill-progress" data-percent="80%">
-                            <div class="determinate skill-determinate">
-                                <i class="skill-determinate-circle fa fa-circle"
-                                   data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill-progress-div">
-                        <!-- Add Skill -->
-                        <p>C<span>70%</span></p>
-                        <!-- Edit Value Here -->
-                        <div class="progress skill-progress" data-percent="70%">
-                            <div class="determinate skill-determinate">
-                                <i class="skill-determinate-circle fa fa-circle"
-                                   data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill-progress-div">
-                        <!-- Add Skill -->
-                        <p>SQL<span>70%</span></p>
-                        <!-- Edit Value Here -->
-                        <div class="progress skill-progress" data-percent="70%">
-                            <div class="determinate skill-determinate">
-                                <i class="skill-determinate-circle fa fa-circle"
-                                   data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill-progress-div">
-                        <!-- Add Skill -->
-                        <p>Typescript<span>60%</span></p>
-                        <!-- Edit Value Here -->
-                        <div class="progress skill-progress" data-percent="60%">
-                            <div class="determinate skill-determinate">
-                                <i class="skill-determinate-circle fa fa-circle"
-                                   data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        <div class="row">
-
-            <div class="col col-md-4 col-sm-4 col-xs-12">
-                <div class="card content-wrapper skill-wrapper">
-                    <h5 class="text-center skill-title">Web Development</h5>
-
-                    <div class="skill-progress-div">
-                        <!-- Add Skill -->
-                        <p>UI/UX Design<span>80%</span></p>
-                        <!-- Edit Value Here -->
-                        <div class="progress skill-progress" data-percent="80%">
-                            <div class="determinate skill-determinate">
-                                <i class="skill-determinate-circle fa fa-circle"
-                                   data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill-progress-div">
-                        <!-- Add Skill -->
-                        <p>Django <span>90%</span></p>
-                        <!-- Edit Value Here -->
-                        <div class="progress skill-progress" data-percent="90%">
-                            <div class="determinate skill-determinate">
-                                <i class="skill-determinate-circle fa fa-circle"
-                                   data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill-progress-div">
-                        <!-- Add Skill -->
-                        <p>Android Development<span>70%</span></p>
-                        <!-- Edit Value Here -->
-                        <div class="progress skill-progress" data-percent="70%">
-                            <div class="determinate skill-determinate">
-                                <i class="skill-determinate-circle fa fa-circle"
-                                   data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill-progress-div">
-                        <!-- Add Skill -->
-                        <p>Adobe Design Tools<span>70%</span></p>
-                        <!-- Edit Value Here -->
-                        <div class="progress skill-progress" data-percent="70%">
-                            <div class="determinate skill-determinate">
-                                <i class="skill-determinate-circle fa fa-circle"
-                                   data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill-progress-div">
-                        <!-- Add Skill -->
-                        <p>Javascript<span>60%</span></p>
-                        <!-- Edit Value Here -->
-                        <div class="progress skill-progress" data-percent="60%">
-                            <div class="determinate skill-determinate">
-                                <i class="skill-determinate-circle fa fa-circle"
-                                   data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-
-            <div class="col col-md-4 col-sm-4 col-xs-12">
-                <div class="card content-wrapper skill-wrapper">
-                    <h5 class="text-center skill-title">Machine Learning</h5>
-
-                    <div class="skill-progress-div">
-                        <!-- Add Skill -->
-                        <p>Pandas<span>80%</span></p>
-                        <!-- Edit Value Here -->
-                        <div class="progress skill-progress" data-percent="80%">
-                            <div class="determinate skill-determinate">
-                                <i class="skill-determinate-circle fa fa-circle"
-                                   data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill-progress-div">
-                        <!-- Add Skill -->
-                        <p>scikit-learn<span>70%</span></p>
-                        <!-- Edit Value Here -->
-                        <div class="progress skill-progress" data-percent="70%">
-                            <div class="determinate skill-determinate">
-                                <i class="skill-determinate-circle fa fa-circle"
-                                   data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill-progress-div">
-                        <!-- Add Skill -->
-                        <p>Data Analysis(Python)<span>70%</span></p>
-                        <!-- Edit Value Here -->
-                        <div class="progress skill-progress" data-percent="70%">
-                            <div class="determinate skill-determinate">
-                                <i class="skill-determinate-circle fa fa-circle"
-                                   data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill-progress-div">
-                        <!-- Add Skill -->
-                        <p>Data Visualization(Python)<span>70%</span></p>
-                        <!-- Edit Value Here -->
-                        <div class="progress skill-progress" data-percent="70%">
-                            <div class="determinate skill-determinate">
-                                <i class="skill-determinate-circle fa fa-circle"
-                                   data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill-progress-div">
-                        <!-- Add Skill -->
-                        <p>R<span>60%</span></p>
-                        <!-- Edit Value Here -->
-                        <div class="progress skill-progress" data-percent="60%">
-                            <div class="determinate skill-determinate">
-                                <i class="skill-determinate-circle fa fa-circle"
-                                   data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    
-</section>
 
 <!--==========================================
                    EDUCATION
@@ -483,7 +323,6 @@
 
                                 <!-- Institution, Period & result -->
                                 <p class="sub-heading">University of British Columbia - Canada</p>
-                                <p class="sub-heading">Graduating December 2019</p>
 
                                 <!-- Education Summary -->
                                 <p class="content-p">
@@ -543,6 +382,7 @@
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content animated zoomIn">
                             <h3 class="text-capitalize text-left">BC Data Science NLP Capstone Project </h3>
+                            <a href="http://workshop.bcdata.ca/2018/finalpres/comm100-slides.pdf">Presentation</a>
                             <div class="row">
                                 <!-- Modal Image -->
                                 <img class="img-responsive col-md-8 col-sm-12 col-xs-12" src="images/portfolios/nlp.jpg" alt="">
@@ -550,15 +390,15 @@
                                 <!-- Modal Content -->
                                 <div class="content col-md-4 col-sm-12 col-xs-12">
                                     <!-- Date, Category & Client Name of the Project -->
-                                    <p><span>Date:&nbsp;</span> Present</p>
+                                    <p><span>Date:&nbsp;</span>June 2018</p>
                                     <p><span>Python:scikit-learn,pandas,matplotlib.</span></p>
 
                                     <!-- Live Demo Link -->
                                    <!--  <a href="#0" target="_blank" class="btn modal-btn waves-effect waves-light btn-primary custom-btn">Live Demo</a> -->
                                     <!-- Some Information Abut the Project -->
                                     <p class="text-left">
-                                        <ul>• Currently, working in a team of 10 to determine intent and create knowledge base from live chat transcripts. The data set is provided by Comm100 which includes online chat sessions.</ul>
-                                        <ul>• The goal of the project is to cluster or correlate chat sessions and build a knowledge base in an automated way using mathematical models.</ul>
+                                        <ul>• Worked in a team of 10 to determine intent and create knowledge base from live chat transcripts. The data set is provided by Comm100 which includes online chat sessions.</ul>
+                                        <ul>• We clustered and correlate chat sessions and built a knowledge base in an automated way using mathematical models.</ul>
                                     </p>
                                     <button data-dismiss="modal" class="btn right modal-btn close-btn waves-effect waves-light btn-primary custom-btn">Close</button>
                                 </div>
@@ -915,17 +755,17 @@
 <!--==========================================
                     CONTACT
 ===========================================-->
-<section id="contact" class="section">
+<!-- <section id="contact" class="section">
     <h4 class="text-uppercase text-center">Contact</h4>
     <div class="container">
         <div class="row">
 
             <!-- Contact Info -->
-            <div class="col col-sm-12 col-sm-12 col-xs-12">
+            <!-- <div class="col col-sm-12 col-sm-12 col-xs-12">
                 <div class="info card">
 
                     <!-- Apply your own info here -->
-                    <ul class="text-center center-block" data-aos="fade" data-aos-delay="200" data-aos-offset="0">
+                    <!-- <ul class="text-center center-block" data-aos="fade" data-aos-delay="200" data-aos-offset="0">
                         <li>
                             <i class="ion-email center-block"></i>
                             <span>nafis.abrar@alumni.ubc.ca</span>
@@ -938,7 +778,7 @@
                             <i class="ion-ios-location center-block"></i>
                             <span>Vancouver,BC</span>
                         </li>
-                    </ul>
+                    </ul> -->
 
                 </div>
             </div>
@@ -952,25 +792,24 @@
         </div>
 
         <!-- Location MAP -->
-        <div class="row">
+        <!-- <div class="row">
             <div class="col col-md-12 col-sm-12 col-xs-12">
                 <div id="google-map" data-aos="zoom-in" data-aos-delay="0" data-aos-offset="0">
                     <div id="map-container"></div>
                     <div id="cd-zoom-in" class="custom-btn"><i class="material-icons text-center">add</i></div>
                     <div id="cd-zoom-out" class="custom-btn"><i class="material-icons text-center">remove</i></div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </section>
-
 <!--==========================================
                     FOOTER
 ===========================================-->
 <footer>
     <div class="container">
         <p class="text-center">
-                <strong>© Nafis Abrar 2019</strong>
+                <strong>© Nafis Abrar 2020</strong>
             </a>
         </p>
     </div>
@@ -986,9 +825,9 @@
 <script src="javascript/aos.min.js"></script>
 <script src="javascript/jquery.js"></script>
 <script src="javascript/prognroll.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9qwpcDkgIt9hN-0EeXu3rWz-07ZjjLgk"></script>
-<script src="javascript/custom-map.js"></script>
-<script src="javascript/bootstrap.min.js"></script>
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9qwpcDkgIt9hN-0EeXu3rWz-07ZjjLgk"></script> -->
+<!-- <script src="javascript/custom-map.js"></script>
+ --><script src="javascript/bootstrap.min.js"></script>
 <script src="javascript/materialize.min.js"></script>
 <script src="javascript/retina.min.js"></script>
 <script src="javascript/jquery.filterizr.min.js"></script>
