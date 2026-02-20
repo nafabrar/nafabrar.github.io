@@ -332,6 +332,146 @@
             font-style: italic;
         }
 
+        /* ---- Timeline ---- */
+
+        .timeline {
+            position: relative;
+            max-width: var(--container-max);
+            margin: 0 auto;
+            padding-left: 2rem;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(180deg, var(--color-accent), var(--color-accent-glow), transparent);
+        }
+
+        .timeline__entry {
+            position: relative;
+            padding-left: 2rem;
+            padding-bottom: var(--space-xl);
+        }
+
+        .timeline__entry:last-child {
+            padding-bottom: 0;
+        }
+
+        .timeline__dot {
+            position: absolute;
+            left: -2rem;
+            top: 0.35rem;
+            width: 12px;
+            height: 12px;
+            border-radius: var(--radius-full);
+            background: var(--color-accent);
+            box-shadow: 0 0 10px var(--color-accent-glow-strong),
+                        0 0 20px var(--color-accent-glow);
+            transform: translateX(calc(-50% + 1px));
+        }
+
+        .timeline__year {
+            font-size: var(--font-size-sm);
+            color: var(--color-accent);
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            margin-bottom: 0.4rem;
+        }
+
+        .timeline__card {
+            background: var(--color-bg-card);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-lg);
+            padding: clamp(1.25rem, 3vw, 1.75rem);
+            box-shadow: var(--shadow-card);
+            transition: border-color var(--transition-base);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        .timeline__card:hover {
+            border-color: var(--color-border-hover);
+        }
+
+        .timeline__header {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .timeline__logo {
+            width: 40px;
+            height: 40px;
+            min-width: 40px;
+            border-radius: var(--radius-sm);
+            background: #fff;
+            padding: 4px;
+            object-fit: contain;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .timeline__header-text {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .timeline__role {
+            font-size: var(--font-size-base);
+            font-weight: 600;
+            color: var(--color-text-primary);
+            margin-bottom: 0.15rem;
+        }
+
+        .timeline__org {
+            font-size: var(--font-size-sm);
+            margin-bottom: 0.75rem;
+        }
+
+        .timeline__org a {
+            color: var(--color-accent);
+            text-decoration-line: underline;
+            text-decoration-color: rgba(56, 189, 248, 0.3);
+            text-underline-offset: 3px;
+            transition: text-decoration-color var(--transition-fast),
+                        color var(--transition-fast);
+        }
+
+        .timeline__org a:hover {
+            text-decoration-color: var(--color-accent-hover);
+        }
+
+        .timeline__desc {
+            color: var(--color-text-secondary);
+            font-size: var(--font-size-base);
+            line-height: var(--line-height-body);
+            margin-top: 0.75rem;
+        }
+
+        .timeline__desc a {
+            text-decoration-line: underline;
+            text-decoration-color: rgba(56, 189, 248, 0.3);
+            text-underline-offset: 3px;
+            transition: text-decoration-color var(--transition-fast),
+                        color var(--transition-fast);
+        }
+
+        .timeline__desc a:hover {
+            text-decoration-color: var(--color-accent-hover);
+        }
+
+        .personal-note {
+            max-width: var(--container-max);
+            margin: var(--space-xl) auto 0;
+            text-align: center;
+            color: var(--color-text-muted);
+            font-style: italic;
+        }
+
         /* ---- Footer ---- */
 
         .footer {
@@ -433,20 +573,122 @@
     <main>
         <section class="about" id="about">
             <div class="about__container">
-                <h2 class="section-heading reveal">About</h2>
                 <div class="about__content reveal">
                     <p>Hi, I'm Nafis <span class="pronunciation">(na-fees)</span> Abrar. I'm a Senior Tech Lead in Core ML at <a href="https://about.meta.com/">Meta</a>, working on Ranking and Foundational AI. I also founded <a href="https://www.crunchbase.com/organization/edutechs">Edutechs</a>, a classroom management platform, where I serve as CTO. I majored in Computer Science from the <a href="https://www.cs.ubc.ca/">University of British Columbia</a>.</p>
-
-                    <p>I founded Edutechs and built a SaaS platform that automates daily administrative tasks for educational institutions, onboarding 300+ teachers and 10,000+ students across 35+ schools. The company was recognized in <a href="https://www.holoniq.com/notes/2023-south-asia-edtech-100">HolonIQ's South Asia EdTech 100</a> in both 2022 and 2023, and selected for <a href="https://www.acceleratingasia.com/portfolio/edutechs">Accelerating Asia's Cohort 8</a> (top 10 from 600+ applicants across Asia Pacific).</p>
-
-                    <p>I was part of the <a href="https://bigscience.notion.site/Press-9861fc19f0944b6a9409faf2fb9721ba">BigScience</a> workshop and co-authored <a href="https://arxiv.org/abs/2211.05100">BLOOM: A 176B-Parameter Open-Access Multilingual Language Model</a>, a landmark open-access LLM trained on 46 languages and 13 programming languages by a collaboration of 1,000+ researchers worldwide.</p>
-
-                    <p>Previously, I did ML research at UBC's Laboratory for Computational Intelligence under <a href="https://en.wikipedia.org/wiki/Kevin_Leyton-Brown">Dr. Kevin Leyton-Brown</a>, focusing on leveraging LLMs with weak supervision, active learning, and domain adaptation techniques for long text classification.</p>
-
-                    <p>Earlier in my career, I worked on Scotiabank's AI/ML team as a Data Scientist co-op, and at the BC Cancer Research Centre under <a href="https://www.mskcc.org/profile/sohrab-shah">Dr. Sohrab Shah</a>.</p>
-
-                    <p>Outside of work, I've been playing guitar since I was ten and love reading about philosophy.</p>
                 </div>
+
+                <h2 class="section-heading reveal">Timeline</h2>
+
+                <div class="timeline">
+
+                    <div class="timeline__entry reveal">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__year">2023 – Present</div>
+                        <div class="timeline__card">
+                            <div class="timeline__header">
+                                <img class="timeline__logo" src="https://www.google.com/s2/favicons?domain=meta.com&sz=128" alt="Meta logo" width="40" height="40" loading="lazy">
+                                <div class="timeline__header-text">
+                                    <div class="timeline__role">Senior Tech Lead, Core ML (Ranking & Foundational AI)</div>
+                                    <div class="timeline__org"><a href="https://about.meta.com/">Meta</a></div>
+                                </div>
+                            </div>
+                            <p class="timeline__desc">Leading ML efforts in ranking and foundational AI systems at Meta's Core ML organization.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline__entry reveal">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__year">2019 – Present</div>
+                        <div class="timeline__card">
+                            <div class="timeline__header">
+                                <img class="timeline__logo" src="images/logos/edutechs.jpg" alt="Edutechs logo" width="40" height="40" loading="lazy">
+                                <div class="timeline__header-text">
+                                    <div class="timeline__role">Co-founder & CTO</div>
+                                    <div class="timeline__org"><a href="https://www.crunchbase.com/organization/edutechs">Edutechs</a></div>
+                                </div>
+                            </div>
+                            <p class="timeline__desc">Founded Edutechs and led the engineering team, designing end-to-end roadmaps for batch and real-time ML systems and building distributed microservices for 30,000+ paid users. Built the organization's end-to-end ML infrastructure (data engineering, development, inference, monitoring) with CI/CD, reducing time to production by 2x and cutting costs by ~47%. Trained and deployed a retrieval-augmented system using a novel retriever–ranker–summarizer pipeline that reduced hallucinated responses by 63% compared to GPT-4 and improved search relevance by 55%. Optimized model inference throughput and reduced p99 latency by ~3x using efficient attention, ONNX, and quantization. Drove ~18% weekly user growth in the first year through customer segmentation (k-means++, UMAP, XGBoost). <a href="https://www.crunchbase.com/organization/edutechs">Raised multiple funding rounds from angel investors and VCs</a>, recognized in <a href="https://www.holoniq.com/notes/2023-south-asia-edtech-100">HolonIQ's South Asia EdTech 100</a> (2022 & 2023), and selected for <a href="https://www.acceleratingasia.com/portfolio/edutechs">Accelerating Asia</a> (top 10 from 600+ startups).</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline__entry reveal">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__year">2021 – 2022</div>
+                        <div class="timeline__card">
+                            <div class="timeline__header">
+                                <img class="timeline__logo" src="https://www.google.com/s2/favicons?domain=ubc.ca&sz=128" alt="UBC logo" width="40" height="40" loading="lazy">
+                                <div class="timeline__header-text">
+                                    <div class="timeline__role">ML Researcher, Laboratory for Computational Intelligence</div>
+                                    <div class="timeline__org"><a href="https://www.cs.ubc.ca/">University of British Columbia</a></div>
+                                </div>
+                            </div>
+                            <p class="timeline__desc">Led research on LLMs for long-text classification under <a href="https://en.wikipedia.org/wiki/Kevin_Leyton-Brown">Dr. Kevin Leyton-Brown</a>. Implemented distributed parallel training pipelines for LLaMA-2 (70B), Vicuna, and DeBERTa-v2. Experimented with gradual unfreezing, in-context learning (CoT, ToT, Self-Consistency), and QLoRA fine-tuning — achieving a 30.6% improvement over baseline. Instruction-tuned Llama models with Bayesian hyperparameter search for an additional ~15% gain.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline__entry reveal">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__year">2021</div>
+                        <div class="timeline__card">
+                            <div class="timeline__header">
+                                <img class="timeline__logo" src="https://www.google.com/s2/favicons?domain=huggingface.co&sz=128" alt="Hugging Face logo" width="40" height="40" loading="lazy">
+                                <div class="timeline__header-text">
+                                    <div class="timeline__role">BigScience Workshop · Co-authored BLOOM</div>
+                                    <div class="timeline__org"><a href="https://bigscience.notion.site/Press-9861fc19f0944b6a9409faf2fb9721ba">BigScience / Hugging Face</a></div>
+                                </div>
+                            </div>
+                            <p class="timeline__desc">Co-authored <a href="https://arxiv.org/abs/2211.05100">BLOOM: A 176B-Parameter Open-Access Multilingual Language Model</a>, trained on 46 languages and 13 programming languages by a collaboration of 1,000+ researchers worldwide.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline__entry reveal">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__year">Jan 2019 – Aug 2019</div>
+                        <div class="timeline__card">
+                            <div class="timeline__header">
+                                <img class="timeline__logo" src="https://www.google.com/s2/favicons?domain=scotiabank.com&sz=128" alt="Scotiabank logo" width="40" height="40" loading="lazy">
+                                <div class="timeline__header-text">
+                                    <div class="timeline__role">Data Scientist, AI/ML Team</div>
+                                    <div class="timeline__org"><a href="https://www.scotiabank.com/">Scotiabank</a></div>
+                                </div>
+                            </div>
+                            <p class="timeline__desc">Contributed to a team of 7 data scientists owning model pipelines for the bank's fraud detection system. Created ETL pipelines from multiple data sources using large-scale data processing and pipeline orchestration, and added ~100 features for a cheque fraud XGBoost model using Spark. Designed and led an end-to-end NLP system for monitoring customer consent, delivering the project ahead of schedule. Built 2 fraud detection training pipelines using XGBoost, Docker, and GCP.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline__entry reveal">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__year">Jan 2018 – Aug 2018</div>
+                        <div class="timeline__card">
+                            <div class="timeline__header">
+                                <img class="timeline__logo" src="https://www.google.com/s2/favicons?domain=bccancer.bc.ca&sz=128" alt="BC Cancer logo" width="40" height="40" loading="lazy">
+                                <div class="timeline__header-text">
+                                    <div class="timeline__role">Software Developer</div>
+                                    <div class="timeline__org"><a href="https://www.bccancer.bc.ca/">BC Cancer Research Centre</a></div>
+                                </div>
+                            </div>
+                            <p class="timeline__desc">Worked in <a href="https://www.mskcc.org/profile/sohrab-shah">Dr. Sohrab Shah's</a> computational oncology lab, co-authoring papers on <a href="https://pubmed.ncbi.nlm.nih.gov/33462509/">scalable single-cell genome sequencing of 40,000 cells</a> and <a href="https://pubmed.ncbi.nlm.nih.gov/31801743/">clonal decomposition and DNA replication states via scaled single-cell genome sequencing</a>.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline__entry reveal">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__year">2019</div>
+                        <div class="timeline__card">
+                            <div class="timeline__header">
+                                <img class="timeline__logo" src="https://www.google.com/s2/favicons?domain=ubc.ca&sz=128" alt="UBC logo" width="40" height="40" loading="lazy">
+                                <div class="timeline__header-text">
+                                    <div class="timeline__role">Computer Science</div>
+                                    <div class="timeline__org"><a href="https://www.cs.ubc.ca/">University of British Columbia</a></div>
+                                </div>
+                            </div>
+                            <p class="timeline__desc">Majored in Computer Science at UBC.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <p class="personal-note reveal">Outside of work, I've been playing guitar since I was ten and love reading about philosophy.</p>
             </div>
         </section>
     </main>
