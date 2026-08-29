@@ -445,6 +445,73 @@
             text-decoration-color: var(--color-accent-hover);
         }
 
+        /* Grouped roles within a single company card */
+        .timeline__company {
+            font-size: var(--font-size-base);
+            font-weight: 600;
+            color: var(--color-text-primary);
+        }
+
+        .timeline__company a {
+            color: var(--color-text-primary);
+            text-decoration-line: underline;
+            text-decoration-color: rgba(56, 189, 248, 0.3);
+            text-underline-offset: 3px;
+            transition: text-decoration-color var(--transition-fast);
+        }
+
+        .timeline__company a:hover {
+            text-decoration-color: var(--color-accent-hover);
+        }
+
+        .timeline__company-sub {
+            font-size: var(--font-size-sm);
+            color: var(--color-text-secondary);
+            margin-top: 0.15rem;
+        }
+
+        .timeline__subroles {
+            margin-top: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .timeline__subrole {
+            position: relative;
+            padding-left: 1.25rem;
+            border-left: 2px solid var(--color-border);
+        }
+
+        .timeline__subrole::before {
+            content: '';
+            position: absolute;
+            left: -5px;
+            top: 0.45rem;
+            width: 8px;
+            height: 8px;
+            border-radius: var(--radius-full);
+            background: var(--color-accent);
+            box-shadow: 0 0 8px var(--color-accent-glow);
+        }
+
+        .timeline__subrole-title {
+            font-size: var(--font-size-base);
+            font-weight: 600;
+            color: var(--color-text-primary);
+        }
+
+        .timeline__subrole-year {
+            font-size: var(--font-size-sm);
+            color: var(--color-accent);
+            font-weight: 500;
+            margin-top: 0.15rem;
+        }
+
+        .timeline__subrole .timeline__desc {
+            margin-top: 0.5rem;
+        }
+
         .timeline__desc {
             color: var(--color-text-secondary);
             font-size: var(--font-size-base);
@@ -538,7 +605,7 @@
                 >
             </div>
             <h1 class="hero__name">Nafis Abrar</h1>
-            <p class="hero__tagline">Staff TL, Ranking and Foundational AI @ Meta &middot; Co-founder & CTO of Edutechs</p>
+            <p class="hero__tagline">Staff Research Scientist @ Meta MRS &middot; Co-founder & CTO of Edutechs</p>
             <nav class="social" aria-label="Social links">
                 <a href="https://www.linkedin.com/in/nafis-abrar/"
                    target="_blank"
@@ -574,7 +641,7 @@
         <section class="about" id="about">
             <div class="about__container">
                 <div class="about__content reveal">
-                    <p>Hi, I'm a Staff Tech Lead in Ranking and Foundational AI org at <a href="https://about.meta.com/">Meta</a>. Founded <a href="https://edutechs.app/">Edutechs</a>, where I serve as CTO. Previously ML @ <a href="https://www.cs.ubc.ca/">University of British Columbia</a>, <a href="https://bigscience.notion.site/Press-9861fc19f0944b6a9409faf2fb9721ba">BigScience / Hugging Face</a>, <a href="https://www.scotiabank.com/">Scotiabank</a>, and <a href="https://www.bccancer.bc.ca/">BC Cancer Research Centre</a>.</p>
+                    <p>Hi, I'm a Staff Research Scientist at <a href="https://about.meta.com/">Meta</a> MRS. Founded <a href="https://edutechs.app/">Edutechs</a>, where I serve as CTO. Previously ML @ <a href="https://www.cs.ubc.ca/">University of British Columbia</a>, <a href="https://bigscience.notion.site/Press-9861fc19f0944b6a9409faf2fb9721ba">BigScience / Hugging Face</a>, <a href="https://www.scotiabank.com/">Scotiabank</a>, and <a href="https://www.bccancer.bc.ca/">BC Cancer Research Centre</a>.</p>
                     <p>Outside of work, I've been playing guitar since I was ten and love reading about philosophy and history.</p>
                 </div>
 
@@ -584,16 +651,29 @@
 
                     <div class="timeline__entry reveal">
                         <div class="timeline__dot"></div>
-                        <div class="timeline__year">2023 – Present</div>
+                        <div class="timeline__year">2024 – Present</div>
                         <div class="timeline__card">
                             <div class="timeline__header">
                                 <img class="timeline__logo" src="https://www.google.com/s2/favicons?domain=meta.com&sz=128" alt="Meta logo" width="40" height="40" loading="lazy">
                                 <div class="timeline__header-text">
-                                    <div class="timeline__role">Staff ML Tech Lead — Ranking & Foundational AI</div>
-                                    <div class="timeline__org"><a href="https://about.meta.com/">Meta</a></div>
+                                    <div class="timeline__company"><a href="https://about.meta.com/">Meta</a></div>
+                                    <div class="timeline__company-sub">2 roles &middot; Ranking &amp; Recommendation Systems</div>
                                 </div>
                             </div>
-                            <p class="timeline__desc">Developing SOTA ML models to predict user engagement, maximizing both user experience and advertiser value across all Meta Platforms.</p>
+
+                            <div class="timeline__subroles">
+                                <div class="timeline__subrole">
+                                    <div class="timeline__subrole-title">Staff Research Scientist — Meta MRS</div>
+                                    <div class="timeline__subrole-year">2026 – Present</div>
+                                    <p class="timeline__desc">Researching and building state-of-the-art models for content understanding, user understanding, retrieval, and ranking across Facebook, Instagram, and Threads, with a focus on LLM and agent-based modeling. Taking these from research to production while targeting long-horizon breakthroughs in recommendation systems rather than incremental tuning.</p>
+                                </div>
+
+                                <div class="timeline__subrole">
+                                    <div class="timeline__subrole-title">Staff ML Tech Lead — Ranking &amp; Foundational AI</div>
+                                    <div class="timeline__subrole-year">2024 – 2026</div>
+                                    <p class="timeline__desc">Developing SOTA ML models to predict user engagement, maximizing both user experience and advertiser value across all Meta Platforms.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
